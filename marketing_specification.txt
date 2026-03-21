@@ -1,0 +1,71 @@
+# 🏭 Tecmaker 4.0: Smart Manufacturing OS
+> **De la intuición a la precisión. Digitaliza tu planta en 24 horas.**
+
+Tecmaker 4.0 es la plataforma integral de gestión de producción (MES/MOM) diseñada para Pymes industriales que buscan el control total de su planta sin la complejidad de un ERP tradicional.
+
+---
+
+## 💎 1. Propuesta de Valor Central
+Tecmaker 4.0 elimina el papel en la planta de producción y ofrece visibilidad en tiempo real. Está diseñado para ser implementado rápidamente y escalado de forma sencilla.
+
+---
+
+## 🚀 2. Pilares Estratégicos
+
+### ⚡ Implementación Relámpago (Plug & Play)
+*   **Flexibilidad de captura:** Conexión directa mediante **IoT (ESP32)** o terminales manuales intuitivas.
+*   **Setup Rápido:** Configuración de máquinas, productos y turnos lista en solo minutos.
+
+### 📊 Análisis OEE Premium
+*   **Métricas de Clase Mundial:** Visualización en tiempo real de **Disponibilidad, Rendimiento y Calidad**.
+*   **Inteligencia Histórica:** Gráficos interactivos de tendencias de hasta 20 días para detectar patrones.
+*   **Desglose de Pérdidas:** Identificación precisa de cuellos de botella por microparadas, setup y fallos de calidad.
+
+### 📑 Ingeniería Digital (Cartas de Proceso)
+*   **Repositorio Central:** Todos los PDFs técnicos y manuales a un clic del operador.
+*   **Control de Versiones Nativo:** Asegura que el operario siempre trabaje con la última revisión (v2, v3...), manteniendo un historial auditable.
+
+---
+
+## ⚙️ 3. Funcionalidades de Operación
+
+### 🖥️ Panel del Operador (Control Visual)
+*   **Interfaz Táctil:** Optimizada para estaciones de trabajo al pie de máquina.
+*   **Semáforo de Estado:** 
+    *   🟢 **Verde:** Producción Activa.
+    *   🟡 **Amarillo:** Preparación (Setup).
+    *   🔴 **Rojo:** Parada por falla.
+*   **Simplicidad:** Registro de piezas (OK/Scrap) y justificación de paradas en solo 2-3 toques.
+
+### 🔄 Automatización e Inteligencia de Fondo
+*   **Escalamiento Inteligente:** El sistema detecta automáticamente microparadas que superan el umbral de tiempo y las escala a paradas completas, garantizando datos 100% reales sin intervención humana.
+*   **Vigilancia 24/7:** El motor del sistema audita tiempos de preparación (Setup) y microparadas incluso si los supervisores no están logueados.
+
+### 📅 Planificación Dinámica (PCP)
+*   **Calendario Visual:** Gestión de turnos y asignaciones de forma intuitiva.
+*   **Eventos Programados:** Mantenimientos y limpiezas que no penalizan el OEE, permitiendo una planificación realista.
+
+---
+
+## 🔐 4. Seguridad y Roles
+*   **Acceso Jerárquico:** Niveles diferenciados para **Operador**, **Supervisor** y **Administrador**.
+*   **Gestión de Solicitudes:** Control total sobre quién accede al sistema de la empresa.
+*   **Recuperación Segura:** Sistema integrado de recuperación de contraseñas vía email.
+
+---
+
+## 📦 5. Niveles de Suscripción (Pricing)
+
+| Nivel | Ideal para... | Características Top |
+| :--- | :--- | :--- |
+| **Starter** | Talleres pequeños | Hasta 3 máquinas, Registro manual, Dashboard básico. |
+| **Professional** | Plantas en crecimiento | Máquinas ilimitadas, Gestión de Stock, Cartas de Proceso v1. |
+| **Premium (Full)** | Excelencia Operativa | **IoT Ready**, Automatización de Fondo, Análisis Avanzado. |
+
+---
+
+## 🎨 6. Prompt de Diseño UX/Landing
+> *"Actúa como un experto en diseño UX industrial y Copywriting. Diseña una **Landing Page Premium** para 'Tecmaker 4.0'. Estética **Dark Mode** con acentos en Azul Eléctrico y Verde Neón. La página debe incluir: Hero de alto impacto, Grid de pilares estratégicos, Carrusel del Panel del Operador, Tabla de Precios dinámica y Formulario de Demo. Enfatiza la eliminación del papel y el retorno de inversión inmediato."*
+
+---
+*Documento estratégico para expansión comercial de Tecmaker 4.0.*
