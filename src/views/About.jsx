@@ -49,22 +49,22 @@ export default function About() {
           
           <div className="mt-12 grid lg:grid-cols-[300px_1fr] gap-12 items-center mb-16">
             {/* Foto Reducida */}
-            <AnimatedBlock>
-              <div className="relative group max-w-[280px] mx-auto lg:mx-0">
-                <div className="absolute -inset-1 bg-gradient-to-r from-blue-500 to-emerald-500 rounded-2xl blur opacity-25 group-hover:opacity-40 transition duration-1000"></div>
-                <div className="relative rounded-2xl overflow-hidden border border-white/10 bg-slate-900 shadow-2xl">
-                  <img 
-                    src="/img/perfil Enrique.jpg" 
-                    alt="Enrique Temperini - Fundador de Tecmaker" 
-                    className="w-full h-auto grayscale group-hover:grayscale-0 transition-all duration-700 object-cover aspect-square"
-                  />
-                  <div className="p-4 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent absolute bottom-0 w-full">
-                    <h3 className="text-lg font-bold text-white">Enrique Temperini</h3>
-                    <p className="text-emerald-400 font-semibold tracking-wider text-[10px] uppercase">Fundador & Full Stack Dev</p>
+              <AnimatedBlock>
+                <div className="relative group max-w-[280px] mx-auto lg:mx-0">
+                  <div className="absolute -inset-1 bg-gradient-to-r from-blue-500 to-emerald-500 rounded-2xl blur opacity-25 group-hover:opacity-50 transition duration-1000"></div>
+                  <div className="relative rounded-2xl overflow-hidden border border-white/10 bg-slate-900 shadow-2xl">
+                    <img 
+                      src="/img/perfil Enrique.jpg" 
+                      alt="Enrique Temperini - Fundador de Tecmaker" 
+                      className="w-full h-auto transition-all duration-700 object-cover aspect-square scale-100 group-hover:scale-105"
+                    />
+                    <div className="p-4 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent absolute bottom-0 w-full">
+                      <h3 className="text-lg font-bold text-white">Enrique Temperini</h3>
+                      <p className="text-emerald-400 font-semibold tracking-wider text-[10px] uppercase">Fundador & Full Stack Dev</p>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </AnimatedBlock>
+              </AnimatedBlock>
 
             {/* Texto de Perfil */}
             <div className="space-y-6 text-slate-300">
