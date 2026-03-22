@@ -51,7 +51,7 @@ function ContactForm() {
           <AnimatedBlock delay={0.3}>
             <div className="modern-card p-10">
               <form 
-                action="https://formspree.io/f/XXXXX" // Reemplazar XXXXX por el ID de Formspree
+                action="https://formspree.io/f/xkoqlozq" 
                 method="POST"
                 className="space-y-6"
               >
