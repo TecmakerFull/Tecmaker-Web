@@ -50,20 +50,45 @@ function ContactForm() {
           {/* Columna Derecha: Formulario */}
           <AnimatedBlock delay={0.3}>
             <div className="modern-card p-10">
-              <form className="space-y-6">
+              <form 
+                action="https://formspree.io/f/XXXXX" // Reemplazar XXXXX por el ID de Formspree
+                method="POST"
+                className="space-y-6"
+              >
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
-                    <label htmlFor="name" className="block text-sm font-semibold mb-2 text-slate-300">Nombre y Apellido</label>
-                    <input type="text" id="name" className="w-full rounded-lg bg-slate-900 border border-white/10 p-3 text-white placeholder-slate-600 focus:outline-none focus:ring-1 focus:ring-blue-500/50" placeholder="Juan Perez" />
+                    <label htmlFor="name" className="block text-sm font-bold mb-2 text-white">Nombre y Apellido</label>
+                    <input 
+                      type="text" 
+                      id="name" 
+                      name="name"
+                      required
+                      className="w-full rounded-lg bg-slate-900 border border-white/10 p-3 text-white placeholder-slate-600 focus:outline-none focus:ring-1 focus:ring-blue-500/50" 
+                      placeholder="Juan Perez" 
+                    />
                   </div>
                   <div>
-                    <label htmlFor="email" className="block text-sm font-semibold mb-2 text-slate-300">Correo Electrónico</label>
-                    <input type="email" id="email" className="w-full rounded-lg bg-slate-900 border border-white/10 p-3 text-white placeholder-slate-600 focus:outline-none focus:ring-1 focus:ring-blue-500/50" placeholder="juan@ejemplo.com" />
+                    <label htmlFor="email" className="block text-sm font-bold mb-2 text-white">Correo Electrónico</label>
+                    <input 
+                      type="email" 
+                      id="email" 
+                      name="email"
+                      required
+                      className="w-full rounded-lg bg-slate-900 border border-white/10 p-3 text-white placeholder-slate-600 focus:outline-none focus:ring-1 focus:ring-blue-500/50" 
+                      placeholder="juan@ejemplo.com" 
+                    />
                   </div>
                 </div>
                 <div>
-                  <label htmlFor="message" className="block text-sm font-semibold mb-2 text-slate-300">Mensaje</label>
-                  <textarea id="message" rows="5" className="w-full rounded-lg bg-slate-900 border border-white/10 p-3 text-white placeholder-slate-600 focus:outline-none focus:ring-1 focus:ring-blue-500/50" placeholder="Contanos brevemente tu necesidad..."></textarea>
+                  <label htmlFor="message" className="block text-sm font-bold mb-2 text-white">Mensaje / Consulta</label>
+                  <textarea 
+                    id="message" 
+                    name="message"
+                    rows="5" 
+                    required
+                    className="w-full rounded-lg bg-slate-900 border border-white/10 p-3 text-white placeholder-slate-600 focus:outline-none focus:ring-1 focus:ring-blue-500/50" 
+                    placeholder="Contanos brevemente tu necesidad..."
+                  ></textarea>
                 </div>
                 <button type="submit" className="pill-btn pill-btn-blue w-full font-bold text-base mt-2 shadow-lg shadow-blue-500/20">
                   Enviar Mensaje
