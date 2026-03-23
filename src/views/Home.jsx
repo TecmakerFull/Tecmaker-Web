@@ -45,7 +45,7 @@ function Hero() {
       <div className="relative z-10 w-full max-w-5xl mx-auto px-4 flex-grow flex flex-col justify-center">
         <AnimatedBlock>
           <div className="inline-block px-3 py-1 rounded-full bg-orange-500/10 border border-orange-500/20 mb-6 font-bold text-orange-500 text-[10px] uppercase tracking-[0.3em]">
-            Digital Transformation MES 4.0
+            Digital Transformation
           </div>
           <h1 className="text-4xl sm:text-6xl lg:text-7xl font-black leading-[1.1] text-white tracking-tighter shadow-sm mb-10">
             Monitor de Eficiencia<br />
@@ -126,11 +126,11 @@ function MESConcept() {
               El Cerebro de tu Fábrica
             </div>
             <h2 className="text-4xl sm:text-5xl font-extrabold text-white mb-8 leading-tight">
-              Tecmaker 4.0: El <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-emerald-400">puente inteligente</span> entre tu oficina y tu planta.
+              Tecmaker 4.0: <br /> El <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-emerald-400">puente inteligente</span> entre tu oficina y tu planta.
             </h2>
             <div className="space-y-6 text-xl text-slate-300 leading-relaxed">
               <p>
-                No somos solo un software; somos el "sistema nervioso" de tu fabricación. Tecmaker actúa como un MES (Manufacturing Execution System) de última generación que conecta tus decisiones estratégicas (ERP) con la realidad de tus máquinas.
+                No somos solo un software; somos el "sistema nervioso" de tu fabricación. Tecmaker actúa como un MES (Manufacturing Execution System) un software que monitorea, controla y documenta en tiempo real los procesos de producción en la planta, de última generación y conecta tus decisiones estratégicas (ERP) con la realidad de tus máquinas.
               </p>
               <p className="text-lg text-slate-400">
                 Mediante conectividad M2M (Machine to Machine), capturamos el pulso de cada ciclo, eliminando los puntos ciegos y transformando la intuición en datos precisos de rendimiento y calidad.

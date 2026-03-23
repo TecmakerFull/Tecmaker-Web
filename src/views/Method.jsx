@@ -116,12 +116,12 @@ function ForManagement() {
                   alt="Gestión Industrial" 
                   className="absolute inset-0 w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-1000"
                 />
-                <div className="absolute inset-0 bg-gradient-to-b from-slate-950/60 via-transparent to-slate-950/80" />
-                <div className="relative p-10 h-full flex flex-col justify-between">
-                  <p className="text-2xl font-black text-blue-400 leading-tight italic uppercase tracking-tighter">
+                <div className="absolute inset-0 bg-gradient-to-b from-slate-950/70 via-transparent to-slate-950/90" />
+                <div className="relative p-8 sm:p-10 min-h-[320px] lg:h-full flex flex-col justify-between">
+                  <p className="text-xl sm:text-2xl font-black text-blue-400 leading-tight italic uppercase tracking-tighter">
                     ¿Por qué su empresa necesita el OEE?
                   </p>
-                  <p className="text-slate-200 text-lg leading-relaxed italic font-bold">
+                  <p className="text-slate-200 text-base sm:text-lg leading-relaxed italic font-bold">
                     Orientado a dueños, gerentes y líderes de mejora continua que buscan visibilidad total.
                   </p>
                 </div>
@@ -200,12 +200,12 @@ function ForOperator() {
                   alt="Operador Tecmaker" 
                   className="absolute inset-0 w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-1000"
                 />
-                <div className="absolute inset-0 bg-gradient-to-b from-slate-950/60 via-transparent to-slate-950/80" />
-                <div className="relative p-10 h-full flex flex-col justify-between">
-                  <p className="text-2xl font-black text-emerald-400 leading-tight italic uppercase tracking-tighter">
+                <div className="absolute inset-0 bg-gradient-to-b from-slate-950/70 via-transparent to-slate-950/90" />
+                <div className="relative p-8 sm:p-10 min-h-[320px] lg:h-full flex flex-col justify-between">
+                  <p className="text-xl sm:text-2xl font-black text-emerald-400 leading-tight italic uppercase tracking-tighter">
                     Tu herramienta, no tu jefe.
                   </p>
-                  <p className="text-slate-200 text-lg leading-relaxed italic font-bold">
+                  <p className="text-slate-200 text-base sm:text-lg leading-relaxed italic font-bold">
                     Trabajar más inteligente, no más duro. El objetivo es facilitar tu labor diaria.
                   </p>
                 </div>

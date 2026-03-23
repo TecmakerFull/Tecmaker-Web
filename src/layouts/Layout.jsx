@@ -14,7 +14,7 @@ export function Header() {
   ];
 
   return (
-    <header className="sticky top-0 z-50 border-b border-white/5 bg-slate-950/80 backdrop-blur-md">
+    <header className="sticky top-0 z-50 border-b border-white/5 bg-slate-950/40 backdrop-blur-md">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between">
         <div className="flex items-center gap-10">
           <Link to="/" onClick={() => setIsMenuOpen(false)}>
