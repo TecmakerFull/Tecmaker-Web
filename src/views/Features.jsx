@@ -1,9 +1,94 @@
 import AnimatedBlock from "../components/AnimatedBlock";
 import SectionTitle from "../components/SectionTitle";
+import { 
+  BarChart3, 
+  MonitorCog,
+  FileStack,
+  CalendarRange,
+  Send,
+  FilePieChart
+} from "lucide-react";
+
+function CoreModules() {
+  const features = [
+    {
+      icon: MonitorCog,
+      title: "Panel del Operador",
+      text: "Semáforo de estado (Verde=Producción, Amarillo=Setup, Rojo=Falla) y 2-3 toques para justificar paradas.",
+      color: "text-emerald-400",
+      glow: "shadow-emerald-500/20",
+      bg: "bg-emerald-500/10",
+    },
+    {
+      icon: FileStack,
+      title: "Cartas de Proceso",
+      text: "Repositorio digital de PDFs técnicos con control de versiones e historial.",
+      color: "text-blue-400",
+      glow: "shadow-blue-500/20",
+      bg: "bg-blue-500/10",
+    },
+    {
+      icon: CalendarRange,
+      title: "PCP Dinámico",
+      text: "Calendario visual de turnos para planificar con foco operativo real.",
+      color: "text-amber-400",
+      glow: "shadow-amber-500/20",
+      bg: "bg-amber-500/10",
+    },
+    {
+      icon: Send,
+      title: "Alertas Telegram",
+      text: "¿La línea crítica se detuvo? Recibe una alerta instantánea en tu celular o reloj inteligente.",
+      color: "text-sky-400",
+      glow: "shadow-sky-500/20",
+      bg: "bg-sky-500/10",
+    },
+    {
+      icon: FilePieChart,
+      title: "Reportes Automáticos",
+      text: "Envío programado de informes PDF por turno, día o semana directamente a tu correo.",
+      color: "text-purple-400",
+      glow: "shadow-purple-500/20",
+      bg: "bg-purple-500/10",
+    },
+    {
+      icon: BarChart3,
+      title: "Dashboard OEE",
+      text: "Análisis interactivo de las 6 grandes pérdidas para priorizar acciones de mejora.",
+      color: "text-rose-400",
+      glow: "shadow-rose-500/20",
+      bg: "bg-rose-500/10",
+    },
+  ];
+
+  return (
+    <section className="bg-slate-950 border-b border-white/5 py-24 px-4 pt-32 lg:pt-40">
+      <div className="max-w-7xl mx-auto">
+        <SectionTitle title="Módulos Centrales del MES" />
+        <div className="mt-8 grid md:grid-cols-3 gap-6">
+          {features.map((feature, idx) => {
+            const Icon = feature.icon;
+            return (
+              <AnimatedBlock key={feature.title} delay={idx * 0.05} className="h-full">
+                <article className="modern-card p-10 h-full flex flex-col items-center text-center">
+                  <div className={`mb-6 p-5 rounded-full ${feature.bg} ${feature.glow} shadow-lg flex items-center justify-center`}>
+                    <Icon className={feature.color} size={32} />
+                  </div>
+                  <h3 className="text-xl font-bold text-white mb-4">{feature.title}</h3>
+                  <p className="text-slate-400 leading-relaxed text-sm">{feature.text}</p>
+                </article>
+              </AnimatedBlock>
+            );
+          })}
+        </div>
+      </div>
+    </section>
+  );
+}
 
 function FeaturesTour() {
   return (
-    <section className="bg-slate-950 border-b border-white/5 py-14 sm:py-24 px-4 px-4">
+    <section className="bg-slate-900/40 border-b border-white/5 py-14 sm:py-24 px-4">
       <div className="max-w-7xl mx-auto space-y-24">
         <AnimatedBlock>
           <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -12,10 +97,10 @@ function FeaturesTour() {
               <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">Órdenes de Producción</h2>
               <div className="space-y-4 text-slate-300 leading-relaxed">
                 <p>
-                  <span className="text-white font-semibold underline decoration-emerald-500/30"> Arquitectura compatible con ERP (Enterprise Resource Planning):</span> El ingreso de órdenes de producción se realiza de forma automática y rápida, minimizando el esfuerzo de los planificadores.
+                  <span className="text-white font-semibold underline decoration-emerald-500/30"> Arquitectura compatible con ERP:</span> El ingreso de órdenes de producción se realiza de forma automática y rápida, minimizando el esfuerzo de los planificadores.
                 </p>
                 <p>
-                  La conectividad entre áreas permite que toda la cadena productiva esté preparada para atender cada nueva demanda, logística, producción, calidad y mantenimiento.
+                  La conectividad entre áreas permite que toda la cadena productiva esté preparada para atender cada nueva demanda: logística, producción, calidad y mantenimiento.
                 </p>
                 <p>
                   Todos los eslabones de la cadena están integrados, minimizando fallos de planificación y aumentando el rendimiento de la operación.
@@ -77,10 +162,10 @@ function FeaturesTour() {
                   <span className="text-white font-semibold underline decoration-purple-500/30">Consumo en Tiempo Real:</span> Cada "golpe" de producción descontará automáticamente el material del stock de materia prima y aumentará la cantidad de piezas disponibles terminadas.
                 </p>
                 <p>
-                  Gestión integral de productos y materia prima vinculada directamente a las órdenes de producción. El sistema genera **alertas de faltantes** basadas en lo programado, permitiendo anticiparse a quiebres de stock.
+                  Gestión integral de productos y materia prima vinculada directamente a las órdenes de producción. El sistema genera **alertas de faltantes** basadas en lo programado.
                 </p>
                 <p>
-                  Movimientos, ingresos y ajustes 100% auditables. Cada acción deja una "huella digital" del usuario responsable, garantizando transparencia total en la cadena de suministros.
+                  Movimientos, ingresos y ajustes 100% auditables. Cada acción deja una "huella digital" del usuario responsable, garantizando transparencia total.
                 </p>
               </div>
             </div>
@@ -116,13 +201,13 @@ function FeaturesTour() {
               <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">Dashboards e Inteligencia de Datos</h2>
               <div className="space-y-4 text-slate-300 leading-relaxed">
                 <p>
-                  <span className="text-white font-semibold underline decoration-rose-500/30">Análisis Multidimensional:</span> Visualiza las principales pérdidas de eficiencia categorizadas por motivos, máquinas o productos específicos de manera instantánea.
+                  <span className="text-white font-semibold underline decoration-rose-500/30">Análisis Multidimensional:</span> Visualiza las principales pérdidas de eficiencia por motivos, máquinas o productos de manera instantánea.
                 </p>
                 <p>
-                  Aplica filtros avanzados para desglosar la operación por líneas de producción, turnos o periodos temporales personalizados. La información fluye sin fricciones desde el piso de planta hasta la gerencia.
+                  Aplica filtros avanzados por líneas, turnos o periodos. La información fluye sin fricciones desde el piso de planta hasta la gerencia.
                 </p>
                 <p>
-                  Identifica patrones con la **visualización de tendencia mensual** por máquina. Los resúmenes generales te permiten detectar cuellos de botella y priorizar inversiones basadas en datos reales.
+                  Identifica patrones con la **visualización de tendencia mensual**. Los resúmenes generales te permiten detectar cuellos de botella y priorizar inversiones.
                 </p>
               </div>
             </div>
@@ -156,7 +241,7 @@ function OperationsGallery() {
   ];
 
   return (
-    <section className="bg-slate-900/40 border-b border-white/5 py-14 sm:py-20 px-4">
+    <section className="bg-slate-950 border-b border-white/5 py-14 sm:py-20 px-4">
       <div className="max-w-7xl mx-auto">
         <SectionTitle title="Operaciones y decisiones basadas en datos" />
         <div className="mt-8 grid md:grid-cols-3 gap-6">
@@ -181,7 +266,8 @@ function OperationsGallery() {
 
 export default function Features() {
   return (
-    <div>
+    <div className="bg-slate-950 min-h-screen">
+      <CoreModules />
       <FeaturesTour />
       <OperationsGallery />
     </div>
